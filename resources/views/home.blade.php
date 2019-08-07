@@ -15,6 +15,10 @@
                     @endif
 
                     You are logged in!
+
+                    @if(isset($userldap))
+                      {{ $userldap }}
+                    @endif
                 </div>
             </div>
         </div>
