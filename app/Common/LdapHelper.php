@@ -136,6 +136,7 @@ class LdapHelper
             //$retdata = $ldapdata;
             if($isweb == 1){
               Auth::loginUsingId($theuser->id, false);
+              session(['ldapdata' => $retdata]);
             }
           }
 

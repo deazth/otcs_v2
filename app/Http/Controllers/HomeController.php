@@ -23,6 +23,6 @@ class HomeController extends Controller
      */
     public function index(Request $req)
     {
-        return view('home');
+        return view('home', ['userldap' => $req->session()->get('ldapdata')]);
     }
 }
